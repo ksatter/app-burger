@@ -12,11 +12,12 @@ $(document).ready(function () {
   $("button").click(function () {
     event.preventDefault();
     let burgerData = {name: $("#new_burger").val().trim()}
-  
+
     $.ajax({
       url: "/api/burgers",
       type: "POST",
       data: burgerData
     })
+    location.reload()
   })
 })

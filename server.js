@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const methodOverride = require('method-override');
 
 // Set up Server
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3030;
 const app = express()
 
 //Serve static content from public folder
