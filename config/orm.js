@@ -10,7 +10,7 @@ const orm = {
   },
   insertOne: function(data) {
 
-    let query = `INSERT INTO burgers (burger_name, date) VALUES("${data}", CURRENT_DATE)`;
+    let query = `INSERT INTO burgers (burger_name, createdAt) VALUES("${data}", CURRENT_TIMESTAMP)`;
     console.log(query)
     connection.query(query, function(err) {
       if (err) throw err
